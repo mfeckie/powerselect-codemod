@@ -1,0 +1,9 @@
+<PowerSelect
+  @searchEnabled={{false}}
+  @placeholder='Select a thing'
+  @options={{this.options}}
+  @selected={{this.selected}}
+  @onChange={{action 'doSomething'}} as |dropdown|
+>
+  {{dropdown}}
+</PowerSelect>

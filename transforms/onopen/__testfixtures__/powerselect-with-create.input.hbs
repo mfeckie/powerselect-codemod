@@ -1,0 +1,16 @@
+<div ...attributes>
+  <PowerSelectWithCreate
+    @options={{this.options}}
+    @oncreate={{action this.oncreate}}
+    @onopen={{action this.onopen}}
+    @search={{perform someTask}}
+    @renderInPlace={{true}}
+    @disabled={{@disabled}}
+    @triggerId='someId'
+    @placeholder='Some Placeholder' as |dd|
+  >
+    <span data-test-dropdown-option={{dd.name}}>
+      {{dd.name}}
+    </span>
+  </PowerSelectWithCreate>
+</div>
